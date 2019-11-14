@@ -2,19 +2,18 @@
 
 <html lang="en-us">
 
-<head>
+
+
+<head>  
 
   <meta charset="UTF-8">
   <title>BART Schedule</title>
 
-  <!-- Bootstrap -->
+ 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<!-- 
-  <!-- Firebase References -->
-  <!-- <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script> --> -->
-
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
   
+
 </head>
 
 <body>
@@ -53,11 +52,11 @@
                   </div>
               <div class="row">
                   <div class="col-lg-1"></div>
-                  <div id="1" class="col-lg-2"></div>
-                  <div id="2" class="col-lg-2"></div>
-                  <div id="3" class="col-lg-2"></div>
-                  <div id="4" class="col-lg-2"></div>
-                  <div id="5" class="col-lg-2"></div>
+                  <div id="You" class="col-lg-2"></div>
+                  <div id="Are" class="col-lg-2"></div>
+                  <div id="The" class="col-lg-2"></div>
+                  <div id="Best" class="col-lg-2"></div>
+                  <div id="Train" class="col-lg-2"></div>
                   <div class="col-lg-1"></div>
               </div>
                 </div>
@@ -78,19 +77,19 @@
             <form role="form">
               <div class="form-group row">
                 <label for="name-input">Train Name:</label>
-                <input class="form-control" id="name-input" type="text">
+                <input class="form-control" id="train" type="text">
               </div>
               <div class="form-group row">
                 <label for="email-input">Destination:</label>
-                <input class="form-control" id="email-input" type="text">
+                <input class="form-control" id="destination" type="text">
               </div>
               <div class="form-group row">
                 <label for="age-input">First Train Time (HH:mm - military time):</label>
-                <input class="form-control" id="age-input" type="number">
+                <input class="form-control" id="firstTime" type="number">
               </div>
               <div class="form-group row">
                 <label for="comment-input">Frequency (min):</label>
-                <input class="form-control" id="comment-input" type="text"></input>
+                <input class="form-control" id="frequency" type="text"></input>
                </div>
               <button class="btn btn-default" id="add-user" type="submit">Submit</button>
             </form>
@@ -98,48 +97,25 @@
           </div>
         </div>
       </div>
-
-
       </div>
-
-     
 
   </div>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
   <script src="assets/java.js"></script>
+    
+  <script>
+  
 
-  <!-- Script -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
-<!-- <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script> --> -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCGME93NHVi662qDVatREjrznjukxRG3Lg",
-    authDomain: "bart-edad2.firebaseapp.com",
-    databaseURL: "https://bart-edad2.firebaseio.com",
-    projectId: "bart-edad2",
-    storageBucket: "bart-edad2.appspot.com",
-    messagingSenderId: "964553708588",
-    appId: "1:964553708588:web:fe06da020f7746e066ad89",
-    measurementId: "G-8JH92LB41M"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  // firebase.analytics();
-   var dataRef = firebase.database();
 </script>
 
+  
 
-
-  <script></script>
 </body>
 
 </html>
