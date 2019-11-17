@@ -62,6 +62,9 @@ $("#add-user").on('click', function (event) {
 
     //     })
     // }
+
+
+
 });
 
 database.ref().on("child_added", function(childSnapshot) {
@@ -74,10 +77,6 @@ database.ref().on("child_added", function(childSnapshot) {
    
 
     // full list of items to the well
-    // $("#You").append(childSnapshot.val().train)
-    // $("#Are").append(childSnapshot.val().destination)
-    // $("#The").append(childSnapshot.val().firstTime)
-    // $("#Best").append(childSnapshot.val().frequency)
     
 
     // Handle the errors
@@ -85,8 +84,10 @@ database.ref().on("child_added", function(childSnapshot) {
 
   database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
     // Change the HTML to reflect
-    $("#You").text(snapshot.val().train);
-    $("#Are").text(snapshot.val().destination);
-    $("#The").text(snapshot.val().firstTime);
-    $("#Best").text(snapshot.val().frequency);
+    $("#You").append(snapshot.val().train, "<br>");
+    $("#Are").append(snapshot.val().destination, "<br>");
+    $("#The").append(snapshot.val().firstTime, "<br>");
+    $("#Best").append(snapshot.val().frequency, "<br>");
+
+    
   });
